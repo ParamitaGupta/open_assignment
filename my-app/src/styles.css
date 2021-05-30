@@ -9,6 +9,25 @@ html,body{
 body{
     overflow-x: hidden;
 }
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: lightgray; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: gray;
+  } 
 @font-face {
 	font-family: 'Montserrat-Medium';
     src: url('assets/fonts/montserrat/Montserrat-Medium.ttf'); 

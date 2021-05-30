@@ -15,10 +15,13 @@ export class HeaderComponent implements OnInit {
   onWindowScroll() {
   //In chrome and some browser scroll is given to body tag
   let pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
-   if(pos >= 1150 )   {
+  let max = document.documentElement.scrollHeight;
+  let pospercent = pos/max*100;
+  console.log(pospercent);
+   if(pospercent >= 52 )   {
      document.getElementsByTagName('header')[0].classList.add('scroll-header');
    }
-   else if(pos < 1150 ){
+   else if(pospercent < 52 ){
     document.getElementsByTagName('header')[0].classList.remove('scroll-header')
    }
   }

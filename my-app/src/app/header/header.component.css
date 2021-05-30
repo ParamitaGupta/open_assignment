@@ -37,6 +37,7 @@ header{
     padding: 0 25px;
     height: 45px;
     margin-left: 10px;
+    background-color: white;
 }
 .login-btn:hover,.login-btn:focus{
     box-shadow: 0px 0px 20px #00000033;
@@ -58,8 +59,7 @@ header{
     background-image: linear-gradient(to right,#9F62C9,#663399);
     color: #fff;
     height: 45px;
-
-}
+    }
 .getstarted-btn:hover,.getstarted-btn:focus{
     cursor: pointer;
 }
