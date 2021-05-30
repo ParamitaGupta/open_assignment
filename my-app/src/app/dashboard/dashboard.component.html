@@ -1,0 +1,99 @@
+<main>
+   <div class="circle-back"></div>
+   <div class="upper-content">
+      <div class="upper-left">
+         <h2>
+            We make it Super Simple
+         </h2>
+         <div class="video-img-outer"><img src="../../assets/images/collect_img-video.png" alt="video-img"></div>
+      </div>
+      <div class="upper-right">
+         <div class="calculator">
+            <h4>Eligibility Calculator</h4>
+            <article>
+               <p>Monthly Income</p>
+               <label for="income">&#x20b9;{{ income.value | number}}</label>
+               <input type="range" class="slider-range" #income (input)="income.value" id="income" min="100000"
+                  max="300000">
+               <div class="input-range-text"><span>&#x20b9;100000</span><span>&#x20b9;300000</span></div>
+            </article>
+            <article>
+               <p>Monthly expense</p>
+               <label for="expense">&#x20b9;{{ expense.value | number }}</label>
+               <input type="range" class="slider-range" #expense (input)="expense.value" id="expense" min="0"
+                  max="300000">
+            </article>
+            <article class="select-wrap">
+               <p>Repayment Tenure</p>
+               <select name="repay" id="calSelect">
+                  <option value="3">3months</option>
+                  <option value="4">4months</option>
+                  <option value="6">6months</option>
+                  <option value="12">12months</option>
+               </select>
+            </article>
+            <article class="loan-switch">
+               <p>Do you have any existing loans?</p>
+               <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+               </label>
+            </article>
+            <p>EMI of exisiting loan</p>
+            <input type="text" name="emi" id="emi" />
+         </div>
+         <div class="calculated">
+            <article>
+               <p>Loan Amount</p>
+               <p>&#x20b9;1,00,000</p>
+            </article>
+            <article>
+               <p>Your EMI will be</p>
+               <p>&#x20b9;15,000</p>
+            </article>
+            <button>GET MONEY</button>
+         </div>
+      </div>
+   </div>
+   <div class="lower-content">
+      <div class="lower-left">
+         <div>
+            <article>
+               <img src="../../assets/images/Get Paid Instantly.png" alt="quick-cash">
+               <h5>Quick cash disbursement</h5>
+               <p>Get terms loans that your business needs within 72 hrs</p>
+            </article>
+            <article>
+               <img src="../../assets/images/Low interest rate.png" alt="interest">
+               <h5>Low-interest rate</h5>
+               <p>Achieve your financial goals with an amazing interest rate starting at 13% per annum</p>
+            </article>
+            <article>
+               <img src="../../assets/images/Secure Payments.png" alt="paperwork">
+               <h5>Zero Paperwork</h5>
+               <p>Get started instantly by submitting only your basic details & bank statements</p>
+            </article>
+         </div>
+         <div>
+            <article>
+               <img src="../../assets/images/freelancer_feature_icon_6@1.5x.png" alt="business-fin">
+               <h5>Ace your business finances</h5>
+               <p>Manage banking, accounting & everything in between, on one platform</p>
+            </article>
+            <article>
+               <img src="../../assets/images/Covid.png" alt="covid-loan">
+               <h5>Loans to fight COVID-19</h5>
+               <p>Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh</p>
+            </article>
+         </div>
+      </div>
+      <div class="lower-right">
+         <div>
+            <h2>Boost your business with Open</h2>
+         <p>Get your hands on a term loan that’s crafted for your business</p>
+         <button class="open-acc-btn">Get an Open Account</button>
+         </div>
+         
+      </div>
+   </div>
+</main>

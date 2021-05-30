@@ -1,0 +1,17 @@
+
+.outer-div{
+    position: absolute;
+    right: -86px;
+    top: -269px;
+    width: 1100px;
+    height: 1101px;
+    background: url('../assets/images/circle.svg') no-repeat;
+    background-position: center -20px;
+    background-size: cover;
+    overflow-x: hidden;
+}
+app-header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
