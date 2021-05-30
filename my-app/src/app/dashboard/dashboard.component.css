@@ -35,6 +35,7 @@ h2::after{
 .upper-left{
     min-height: 507px;
     min-width: 652px;
+    position: relative;
 }
 .video-img-outer{
     position: absolute;
@@ -119,6 +120,7 @@ h2::after{
       display: flex;
       font-family: 'OpenSans-Regular';
       align-items: center;
+      position: relative;
   }
   .upper-right label{
       display: block;
@@ -157,6 +159,8 @@ h2::after{
     border-radius: 20px;
     min-width: 450px;
     box-shadow: 0px 0px 20px #00000033;
+    position: static;
+    z-index: 2;
   }
   .calculator h4{
       text-align: center;
@@ -323,4 +327,18 @@ h2::after{
     background-image: linear-gradient(to right,#9F62C9,#663399);
     color: #fff;
     cursor: pointer;
+  }
+  .dots{
+      position: absolute;
+      left: 410px;
+      bottom: -82px;
+  }
+  .dots p{
+    font-size: 73px;
+    color: gray;
+    opacity: 0.3;
+    margin: 0;
+  }
+  .dots p:nth-child(2){
+      line-height: 0px;
   }
